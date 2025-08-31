@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menyu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    h1 {
+      text-align: center;
+      padding: 30px;
+      color: #ff3333;
+      font-size: 32px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: auto;
+    }
+    @media (min-width: 700px) {
+      .menu {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1200px) {
+      .menu {
+        grid-template-columns: repeat(3, 1fr); /* endi 3 ustun */
+      }
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card img {
+      width: 100%;
+      height: 280px;       /* rasmni kattalashtirdim */
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h2 {
+      margin: 0;
+      font-size: 22px;   /* nom kattaroq */
+      color: #ff4444;
+    }
+    .card-content p {
+      margin: 8px 0;
+      color: #aaa;
+      font-size: 16px;   /* matn kattaroq */
+    }
+    .price {
+      font-weight: bold;
+      font-size: 18px;   /* narx kattaroq */
+      margin-top: 12px;
+      display: inline-block;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ASOSIY MENU</h1>
+  <div class="menu">
+    
+    <!-- 1-taom -->
+    <div class="card">
+      <img src="./zakazqiymaa.JPG" alt="Taom 1">
+      <div class="card-content">
+        <h2>Qiyma</h2>
+        <p>135 gr</p>
+        <span class="price">17 000 so‘m</span>
+      </div>
+    </div>
+
+    <!-- 2-taom -->
+    <div class="card">
+      <img src="./qiymaa.JPG" alt="Taom 2">
+      <div class="card-content">
+        <h2>Zakaz Qiyma</h2>
+        <p>150 gr</p>
+        <span class="price">18 000 so‘m</span>
+      </div>
+    </div>
+
+    <!-- qolgan 6 ta card -->
+    <div class="card"><img src="./molqoshtiyogli.JPG" alt="Taom 3"><div class="card-content"><h2>Mol Go'shti yog'li</h2><p>120 gr</p><span class="price">19 000 so‘m</span></div></div>
+    <div class="card"><img src="./molgoshtiyogsiz.JPG" alt="Taom 4"><div class="card-content"><h2>Mol Go'shti yog'siz</h2><p>120 gr</p><span class="price">19 000 so‘m</span></div></div>
+    <div class="card"><img src="./qoygoshti.JPG" alt="Taom 6"><div class="card-content"><h2>Qo'y Go'shti</h2><p>120 gr</p><span class="price">22 000 so‘m</span></div></div>
+    <div class="card"><img src="./qoybiqin.JPG" alt="Taom 7"><div class="card-content"><h2>Qo'y Biqin</h2><p>200 gr</p><span class="price">25 000 so‘m</span></div></div>
+    <div class="card"><img src="./rulett.JPG" alt="Taom 8"><div class="card-content"><h2>Rulet</h2><p>120 gr</p><span class="price">20 000 so‘m</span></div></div>
+    <div class="card"><img src="./qanott.JPG" alt="Taom 5"><div class="card-content"><h2>Qanot</h2><p>200 gr</p><span class="price">15 000 so‘m</span></div></div>
+
+  </div>
+
+</body>
+</html>
